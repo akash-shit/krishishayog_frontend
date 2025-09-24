@@ -342,11 +342,11 @@
                 <a href="advisory.html" data-translate="nav-advisory">Advisory</a>
                 <a href="contact.html" data-translate="nav-contact">Contact</a>
                 
-                {% if session.get('logged_in') %}
+                <!-- {% if session.get('logged_in') %}
                     <a href="{{ url_for('logout') }}" id="authLink" data-translate="nav-logout">Logout ❌  </a>
                 {% else %}
                     <a href="{{ url_for('login') }}" id="authLink" data-translate="nav-login">Login</a>
-                {% endif %}
+                {% endif %} -->
             </div>
             
             <div class="language-selector">
@@ -645,4 +645,5 @@
         }
     </script>
 </body>
+
 </html>
