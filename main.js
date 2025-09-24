@@ -939,7 +939,8 @@ function updateWeather() {
 }
 
 function fetchWeatherData(location) {
-    const url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&aqi=yes&alerts=yes`;
+    // Use HTTPS instead of HTTP to avoid mixed content errors
+    const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${location}&aqi=yes&alerts=yes`;
     
     fetch(url)
     .then(response => {
